@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>City blocks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    </head>
+<body>
+<div class="flexbox-container" id="PageContent">
+    <div class="flexbox-item item1" id="TopScoreBlock">
+            <b class="inner-item " id="TopBlock">Top Score</b>
+            <table id="TopTable">
+                <tbody><tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td id="top1user"></td>
+                    <td id="top1score"></td>
+                </tr>
+                <tr>
+                    <td id="top2user"></td>
+                    <td id="top2score"></td>
+                </tr>
+                <tr>
+                    <td id="top3user"></td>
+                    <td id="top3score"></td>
+                </tr>
+                </tbody>
+            </table>
+            <div id="PlayersData">
+                <ol id="lvl">LEVEL:</ol>
+                <ol id="score">score: </ol>
+                <ol id ="playername">Player:</ol>
+            </div>
+
+        </div>
+        <div class="flexbox-item item2" id="GameBlock">
+            <img id="left_g" src="styles/left_girl.png">
+            <canvas id="canvas" width="400px" height="800px" ></canvas>
+        </div>
+        <div class="flexbox-item item3" id="controlBlock">
+            <div class="item3-inner" id="NextBlock">
+                <p class="inner-item" >Next Block</p>
+                <canvas id="NextBlockScr" width="210" height="240"></canvas>
+            </div>
+            <div id="ButtonsCont">
+                <ol>
+                    <button id="startBtn">START</button>
+                </ol>
+                <ol>
+                    <button id="pauseBtn">Pause</button>
+                </ol>
+            </div>
+        </div>
+
+    <div id="PopUpBlock">
+            <div id="cover"></div>
+            <div class="NameBox" id="NameBox">
+                <label id="NameLabel" for="NameInput">Hi! What's your name?</label>
+                <input id="NameInput" name="NameInput" onkeydown="updateName(this)" placeholder="Your name..." required="" minlength="3" maxlength="10" size="30">
+            </div>
+    </div>
+</div>
+<img id="TetrImage" src="styles/tetrominos/blocks.png" style="display: none" />
+<script src="script.js"></script>
+</body>
+</html>

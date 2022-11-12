@@ -1,0 +1,215 @@
+*{
+    /*font-family: 'JetBrains Mono', monospace;*/
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    background: #09021F;
+    mix-blend-mode: normal;
+}
+.NameBox {
+    position: fixed;
+
+    background: #89C2D0;
+    border-radius: 70px;
+
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+
+    top: 38%;
+    height: 24%;
+    min-height: 10rem;
+    left: 33%;
+    width: 33%;
+    min-width: 40rem;
+    transition: 0.5s;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#NameLabel{
+    background-color: #89C2D0;
+}
+.NameBox:hover, .NameBox:focus-within {
+    height: 28%;
+    width: 35%;
+    top: 36%;
+    left: 32%;
+}
+
+.NameBox * {
+    margin: auto;
+    width:70%;
+    font-size:  2rem;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+#NameInput {
+    padding-left: 20px;
+    outline: none;
+    color: #645656;
+    /*border-style: solid;*/
+    border-radius: 30px;
+    background-color: white;
+    cursor: text;
+}
+
+@keyframes coverSlide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 70%;
+    }
+}
+
+#cover {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    animation: 0.5s ease-out 0s 1 coverSlide;
+    background: #132F38;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/* CONTENT */
+
+.flexbox-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flexbox-item{
+    flex-wrap: wrap;
+    margin: 3% 3%;
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 4.7%;
+}
+
+
+
+.item2{
+
+}
+.item3{
+    font-family: 'JetBrains Mono';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    /*list-style-position: initial;*/
+}
+
+canvas{
+    background: #B1CCD3;
+    border-radius: 5px;
+}
+button{
+    display: flex;
+    width: 240px;
+    height: 60px;
+    left: calc(50% - 195.42px/2 + 473.12px);
+    top: calc(50% - 44.5px/2 + 66.65px);
+    font-family: 'JetBrains Mono';
+    font-size: inherit;
+
+    align-items: center;
+    background: #E99382;
+    border-radius: 25px;
+    justify-content: center;
+}
+#ButtonsCont{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-right: 11%;
+    margin-top: 20%;
+}
+.inner-item{
+
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    width: 253px;
+    height: 71.88px;
+    left: calc(50% - 253px/2 + 470.5px);
+    top: calc(50% - 71.88px/2 - 344.06px);
+
+    background: #759BA7;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+#TopBlock
+{
+    background: #E1A89A;
+}
+#pauseBtn{
+    background: #83B7C8;
+    margin-top: 0;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: content-box;
+    text-indent: each-line;
+    border-spacing: 5px;
+    position: relative;
+    margin-top: 10%;
+    table-layout: auto;
+    width: 100%;
+    /*border-color: grey;*/
+}
+#left_g{
+    width: 27%;
+    height: 50%;
+    object-fit: fill;
+
+
+}
+#PlayersData{
+    margin-top: 90%;
+    text-align: left;
+}
