@@ -1,8 +1,21 @@
 # pet_projects
 All that I've ever done in my life
 
+## The coolest part is web
+
+### Tetris game 
+![actual frame](https://github.com/vbezuprechnaya/pet_projects/blob/main/web_projects/tetris/references/land.jpg?raw=true)
+The idea was to create a game with nice UI and original theme. I've decided to decorate all tetrominos(figures) as colored blocks of typical building of the Soviet period. I think it's quite stylish. The design you can find on [Figma](https://www.figma.com/file/sltQimsk1c9qxaxOBQkn0y/tetris?node-id=0%3A1&t=90NUczCd5b9dQ9ia-1). Code and all you need is in *web_projects/tetris* directory.
+
+### E-Library
+The task was to make web app for home library based on express using pug(ex Jade). Main elements were book grid and book page/card, where you can edit information about book, delete it, lend it to someone or return it. The prototype you checkout on [Figma](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FO1kda9TtQlZiGtYaItm0my%2FLibrary%3Fnode-id%3D88%253A104%26t%3D90NUczCd5b9dQ9ia-1"). 
+
+I think that the result is much better. By chance take a look at it.
+
+
 ## Course works
 There are two different works.
+
 
   The first one is about BMP. All functions with images in BMP format are implemented, namely: drawing a circle, copying an area, reflecting an area. Everything is presented to the end user in the form of an application with a command-line interface. The Getopt framework was used to write the CLI. The development was carried out in the C language. As a result, an application was developed that prompts the user for a BMP file.
   
