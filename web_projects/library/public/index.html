@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0" >
+
+    <title>E-Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"  href="stylesheets/widescreen.css">
+
+</head>
+<body>
+<!--    <nav>-->
+<!--        <div id = "NavBar">-->
+<!--            <ul>-->
+<!--                <li><a href="#TablePage">Collection</a></li>-->
+<!--                <li><a href="#home">Home</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+    <section class="HomePage" id="home">
+        <div id="WelcomeText">
+            <h2>Welcome here!</h2>
+            <p> That’s a page of e-library, where you can  check our cool collection of books.
+                Of course,  we work as usual library: lend books and wait them back! </p>
+        </div>
+        <div  id="main_btn">
+            <ol>
+                <button id="allbooksBtn" onclick="jump_to_page()">Collection</button>
+            </ol>
+            <ol>
+                <button id="returnBtn" onclick="return_popup()">Return book</button>
+            </ol>
+
+        </div>
+    </section>
+
+    <section class="CollectionPage" id="TablePage">
+        <div id = "sortThing">
+            <button id="sortBtn">
+<!--                <span class="material-symbols-outlined">sort</span>-->
+                <div id = "sortText">Sort By</div>
+                <div class="sort-content">
+                    <a>Title</a>
+                    <a>Author</a>
+                    <a>Year</a>
+<!--                <a>Available</a>-->
+                </div>
+            </button>
+        </div>
+        <div id="Tab&Btn">
+            <div class="GridContent" >
+
+                    <div id="data-output">
+                        <!-- Prodcuts from javascript file in here. -->
+                    </div>
+            </div>
+            <div id="TableBtns">
+                <ol>
+                    <button id="addBtn" onclick="add_popup()">
+                        <span class="material-symbols-outlined">add</span>
+                    </button>
+                </ol>
+<!--                <ol>-->
+<!--                    <button id="delBtn" onclick="del_popup()">-->
+<!--                        <span class="material-symbols-outlined">remove</span>-->
+<!--                    </button>-->
+<!--                </ol>-->
+
+            </div>
+        </div>
+    </section>
+    <div class="popupform" id="addForm">
+        <form name="addBook" class="form-container">
+            <div class="inner-content">
+                <div id="text" class="input-list">
+                    <h3>Title of the Book</h3>
+                    <label>
+                        <input class="popup-input" placeholder="Hamlet" required minlength="2" maxlength="40" size="30">
+                    </label>
+                    <h3>Author's Name</h3>
+                    <label>
+                        <input class="popup-input" placeholder="W. Shakespeare" required minlength="2" maxlength="40" size="30">
+                    </label>
+                    <h3>Published Year</h3>
+                    <label>
+                        <input class="popup-input" placeholder="1601" required minlength="4" maxlength="4" size="30" >
+                    </label>
+                </div>
+                <div id="part">
+                    <button type="button" class="btn cancel"
+                            onclick=" closeForm()">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+            </div>
+            <div id="formBtn">
+                <button id="uploading" class="btn upl" onclick="uploadImage()"> Upload image
+<!--                    <input type='file'> <br><image id="MyImg" src="#"/>-->
+                </button>
+
+                <button type="submit" class="btn" onclick="fetching_data()">Add</button>
+            </div>
+        </form>
+    </div>
+<!--    <div class="popupform" id="delPop">-->
+<!--        <form name="delBook" class="form-container">-->
+<!--            <div class ="inner-content">-->
+<!--                <select id="author">-->
+<!--                    <option ></option>-->
+<!--                </select>-->
+<!--                <select id="title">-->
+<!--                    <option ></option>-->
+<!--                </select>-->
+<!--                <button type="button" class="btn cancel"-->
+<!--                        onclick=" closeDel()">-->
+<!--                    <span class="material-symbols-outlined">close</span>-->
+<!--                </button>-->
+<!--            </div>-->
+
+<!--        </form>-->
+<!--    </div>-->
+    <script src="javascripts/script.js"></script>
+    <script src="javascripts/mainpage.js"></script>
+    <script src="javascripts/sorting.js"></script>
+    <script id="book-template" type="text/html">
+        <a href="BookPage.html">
+            <div id="inner">
+                <img src="/images/book-images/default_cover.png" alt="book cover" draggable="false">
+                <div class="book-info">
+                    <ul>
+                        <li> Title: </li>
+                        <li> Author: </li>
+                        <li> Year of Publishing</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </script>
+</body>
+</html>

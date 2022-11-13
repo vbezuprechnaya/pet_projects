@@ -1,0 +1,72 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale =1.0')
+    title E-Library
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200')
+    link(rel='stylesheet' href='../stylesheets/BookPage.css')
+    title=name
+nav
+    #NavBar
+        ul
+            li
+                a(href='/') Home
+section#BookCart
+    #main_info
+        #book_cover
+            img(src=img)
+        #book_info
+            dl
+                dt Title
+                dd
+                    input(placeholder='Title' disabled='' required='' minlength='2' maxlength='40' size='30' autocomplete='off' value=name)
+                dt Author
+                dd
+                    input(placeholder='Author' disabled='' required='' minlength='2' maxlength='40' size='30' autocomplete='off' value=author)
+                dt
+                dt#renter_label Renter
+                dd
+                    input#renter_input(placeholder='Renter' disabled='' required='' minlength='2' maxlength='200' size='30' autocomplete='off', value=renter)
+                dt Release date
+                dd
+                    input(type='year' disabled='', value=year)
+                dt#status_label=stock.toString()
+        #parambtns
+            ol
+                button#editBtn
+                    span.material-symbols-outlined(id='editicon') edit_square
+            ol
+                button#delBtn
+                    span.material-symbols-outlined delete
+    #Btns
+        ol
+            button#giveBtn() Lend book
+        ol
+            button#returnBtn() Return book
+#del_pop.popup
+    .form-container
+        h3 Are you sure?
+        #del_btns
+            button#confirm_del_btn.btn Yes
+            button#cancel_del_btn.btn No
+#give_pop.popup
+    .form-container
+        h3 Name
+        label
+            input.popup-input(placeholder='Rue' required='' minlength='2' maxlength='40' size='30' name="renter_name" )
+        #give_btns
+            button#confirm_lend.btn Lend
+            button.btn.cancel(type='button' onclick=' closeForm()')
+                span.material-symbols-outlined close
+#return_pop.popup
+    .form-container
+        h3 Do u wanna return it back?
+        #return_btns
+            button#confirm_ret.btn Return
+            button.btn.cancel( id='retcl' type='button')
+                span.material-symbols-outlined close
+script(src='../javascripts/book_page.js')

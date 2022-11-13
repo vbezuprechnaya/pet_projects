@@ -1,0 +1,349 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    /*background-image: url("/design/backmain.png");*/
+
+}
+body{
+    background-image: url("../images/Pattern.png");
+    background-repeat: repeat;
+
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.HomePage{
+    background-image: url("../images/bk1.jpg");
+    background-size: cover;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+}
+.CollectionPage{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.popupform {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: clip; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.popupform form{
+    margin: 12%;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.popupform h3{
+    color: black;
+    margin-left: 2%;
+}
+
+.form-container {
+    max-width: 70%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.94);
+}
+
+/* Full-width input fields */
+.form-container input {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 25px;
+    background: #c2c2c2;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
+.form-container .inner-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3%;
+}
+.inner-content #text{
+    flex: 2;
+}
+
+.form-container #formBtn{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.form-container .btn {
+    background-color: #4d793b;
+
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    /*width: 100%;*/
+    margin-bottom:10px;
+    opacity: 0.9;
+}
+.form-container .cancel {
+    background-color: #b21c00;
+    width: 90px;
+    height: 90px;
+    opacity: 0.8;
+
+}
+.form-container .upl{
+    background-color: #eae4a5;
+    color: black;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.form-container input[type=file]{
+    background: none;
+    display: compact;
+}
+
+#WelcomeText{
+    margin-top: 4vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5vh;
+}
+button{
+    display: flex;
+    width: 25vw;
+    height: 10vh;
+    font-size: 2vw;
+    align-items: center;
+    border-radius: 60px;
+    border-style: none;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+}
+#main_btn{
+    display: flex;
+    margin-top: 8%;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+}
+#allbooksBtn{
+    background: #390F06;
+}
+#returnBtn{
+    color: black;
+    background: #EFEBCE;
+}
+#Tab\&Btn{
+    display: flex;
+}
+#TableBtns{
+    display: flex;
+    margin-right:2% ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#addBtn{
+    background: #80A970;
+    width: 90px;
+    height: 90px;
+}
+#delBtn{
+    width: 90px;
+    height: 90px;
+   background: #651d0d;
+}
+#sortBtn{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sort-content {
+    border: 0px;
+    margin: 0px;
+    width:100%;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    position: sticky;
+    background-color: #282828;
+    z-index: 1;
+    border-radius: 30px 30px 3px 3px;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 25px;
+}
+
+.sort-content a {
+    z-index: 1;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    user-select: none;
+}
+
+.sort-content button {
+    background-color: #575656;
+    border: 0px solid #d2bd91;
+    z-index: 1;
+    color: #ffffff;
+    width: 100%;
+    /*text-decoration: none;*/
+    display: block;
+    block-ellipsis: auto;
+}
+
+.sort-content a:hover {background-color: #575656;}
+
+#sortBtn:hover{
+    background-color: #575656;
+    border-radius: 30px 30px 0px 0px;
+}
+
+#sortBtn:hover .sort-content {visibility: visible; opacity: 1; border-radius: 0px 0px 30px 30px;}
+
+.GridContent{
+    margin-left:2% ;
+}
+#data-output{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+}
+#data-output img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 20vw;
+    max-height: 50vh;
+    /*height: 0%;*/
+}
+
+#inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    text-justify-trim: 1%;
+
+}
+/*#inner li{*/
+/*    text*/
+/*}*/
+#data-output li{
+    list-style: none;
+}
+
+
+@media screen and (max-width: 600px){
+    .HomePage{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .CollectionPage{
+        margin-top: 7%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #main_btn{
+        display: flex;
+        margin-top: 8%;
+        align-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-style: normal;
+        font-weight: 300;
+    }
+    #WelcomeText{
+        font-weight: 300;
+        font-size: 3vh;
+    }
+    button{
+        height: 9vh;
+        width: 61vw;
+        font-size: 2vh;
+    }
+    .CollectionPage{
+        flex-direction: column;
+        align-items: center;
+    }
+    #Tab\&Btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    #TableBtns{
+        flex-direction: row;
+    }
+    #addBtn{
+        width: 60px;
+        height: 60px;
+    }
+    #delBtn{
+        width: 60px;
+        height: 60px;
+    }
+    .form-container{
+        flex: fit-content ;
+    }
+    .form-container input {
+        width: 60%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        border-radius: 25px;
+        background: #c2c2c2;
+        color: black;
+        font-weight: bolder;
+        font-size: larger;
+    }
+    .form-container #formBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

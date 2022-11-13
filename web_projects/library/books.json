@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "image": "../images/book-images/5.jpg",
+    "name": "Миндаль",
+    "author": "Сон Вон Пхён",
+    "year": 2020,
+    "stock": "available",
+    "renter": ""
+  },
+  {
+    "id": 2,
+    "image": "../images/book-images/2.jpg",
+    "name": "1Q84",
+    "author": "Haruki Murakami",
+    "year": 2009,
+    "stock": "available",
+    "renter": ""
+  },
+  {
+    "id": 3,
+    "image": "../images/book-images/3.jpg",
+    "name": "The little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "year": 1943,
+    "stock": "available",
+    "renter": ""
+  },
+  {
+    "id": 4,
+    "image": "../images/book-images/4.jpeg",
+    "name": "Thank you, Jeeves",
+    "author": "P.G. Wodehouse",
+    "year": 1934,
+    "stock": "available",
+    "renter": ""
+  },
+  {
+    "id": 5,
+    "image": "../images/book-images/1.jpg",
+    "name": "The Bird Chronicle",
+    "author": "Haruki Murakami",
+    "year": 1994,
+    "stock": "available",
+    "renter": ""
+  },
+  {
+    "id": 6,
+    "image": "../images/book-images/6.jpg",
+    "name": "Тревожные люди",
+    "author": "Ф. Бакман",
+    "year": 2019,
+    "stock": "unavailable",
+    "renter": "Rue"
+  }
+
+]

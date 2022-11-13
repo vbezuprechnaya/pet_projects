@@ -1,0 +1,262 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    /*background-image: url("/design/backmain.png");*/
+
+}
+body{
+    background-image: url("../images/Pattern.png");
+    background-repeat: repeat;
+
+}
+nav{
+    margin-top: 1%;
+    overflow: hidden;
+}
+
+#NavBar ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#NavBar a{
+    text-decoration: none;
+    position: fixed;
+    transition: 0.5s;
+}
+#NavBar ul li a::after{
+    content: '';
+    width: 1%;
+    height: 2%;
+    background-color: #80A970;
+    display: flex;
+    margin: auto;
+    transition: 0.5s;
+}
+#NavBar ul li a:hover::after{
+    width: 100%;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: clip; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.form-container {
+    max-width: 70%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 17%;
+    border-radius: 5vw;
+}
+.popup h3{
+    color: black;
+    margin-left: 2%;
+    position: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+.form-container #del_btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+#confirm_del_btn{
+    background-color: #4d793b;
+}
+#cancel_del_btn{
+    background-color: #b21c00;
+}
+
+
+#main_info{
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    margin: 3%;
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#book_cover img{
+    margin-left: 7%;
+    margin-top: 5%;
+    vertical-align: middle;
+    width: 20vw;
+    max-height: 50vh;
+}
+#book_info dl{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+#book_info dt{
+    font-weight: bold;
+    font-size: 3vw;
+    margin: 3%;
+}
+#book_info input{
+    background: none;
+    border-block-style: none;
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+#parambtns{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+#Btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+button{
+    display: flex;
+    width: 22vw;
+    height: 10vh;
+    font-size: 2vw;
+    align-items: center;
+    border-radius: 60px;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #80A970;
+}
+#editBtn{
+    display: flex;
+    margin-right:2% ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: #80A970;
+    width: 90px;
+    height: 90px;
+}
+#delBtn{
+    display: flex;
+    margin-right:2% ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: #b21c00;
+    width: 90px;
+    height: 90px;
+}
+#giveBtn{
+    background: #390F06;
+}
+#returnBtn{
+    color: black;
+    background: #EFEBCE;
+}
+#data-output img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 20vw;
+    max-height: 50vh;
+    /*height: 0%;*/
+}
+#main_info{
+    display: flex;
+
+}
+#give_pop input{
+    background: #c2c2c2;
+    border-block-style: none;
+    border-radius: 5px;
+    font-size: 2vw;
+    font-weight: 300;
+}
+#give_btns{
+    display: flex;
+    justify-content: space-between;
+}
+.form-container .cancel {
+    background-color: #b21c00;
+    width: 90px;
+    height: 90px;
+    opacity: 0.8;
+}
+
+#return_btns{
+    display: flex;
+}
+#confirm_lend {
+    background-color: #4d793b;
+}
+@media screen and (max-width: 600px){
+    .popup{
+        flex: fit-content;
+    }
+    .popup .btn{
+        width: 31vw;
+        height: 3vh;
+    }
+    .popup #del_btns, #return_btns,#give_btns{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .form-container{
+        height: max-content;
+    }
+    .form-container button{
+        width: 10%;
+    }
+    #main_info{
+        display: flex;
+        flex: fit-content;
+        width: 90vw;
+        height: fit-content;
+        margin: 3%;
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 40px;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #parambtns{
+        flex-direction: row;
+    }
+    #Btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+    }
+    #giveBtn{
+        width: 62vw;
+        font-size: larger;
+    }
+    #returnBtn{
+        width: 62vw;
+        font-size: larger;
+    }
+    #main_info img{
+        width: 31vw;
+        height: auto;
+    }
+    #main_info h3,input{
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+}
