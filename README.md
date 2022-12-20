@@ -12,6 +12,12 @@ The task was to make web app for home library based on express using pug(ex Jade
 
 I think that the result is much better. By chance take a look at it.
 
+### Social media app on Angular && Administration module using JQuery
+
+In progress... wait for it
+
+### JS Game 
+
 
 ## Course works
 There are two different works.
